@@ -58,6 +58,7 @@ model = tf.keras.Sequential([
     tf.keras.layers.Dense(train_gen.num_classes, activation='softmax')
 ])
 
+
 # Compile the model
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
